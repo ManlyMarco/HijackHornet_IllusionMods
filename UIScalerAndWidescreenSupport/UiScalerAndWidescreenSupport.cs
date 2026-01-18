@@ -26,7 +26,7 @@ namespace UIScalerAndWidescreenSupport
     [BepInPlugin("hj." + "aihs2studio." + nameof(UIScalerAndWidescreenSupport), nameof(UIScalerAndWidescreenSupport), VERSION)]
     public class UIScalerAndWidescreenSupport : BaseUnityPlugin
     {
-        public const string VERSION = "1.0.2";
+        public const string VERSION = "1.0.3";
         public static ConfigEntry<float> ScaleConfig { get; set; }
         public static ConfigEntry<bool> WideScreenConfig { get; set; }
 
