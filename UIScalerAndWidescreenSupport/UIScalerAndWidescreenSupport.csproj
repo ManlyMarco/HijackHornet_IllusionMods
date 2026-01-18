@@ -17,8 +17,8 @@
 	</PropertyGroup>
 	<ItemGroup Condition=" '$(Configuration)' == 'AI' ">
 		<PackageReference Include="IllusionLibs.AIGirl.AllPackages" Version="*">
-		  <IncludeAssets>compile</IncludeAssets>
-		  <PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>compile</IncludeAssets>
+			<PrivateAssets>all</PrivateAssets>
 		</PackageReference>
 	</ItemGroup>
 
