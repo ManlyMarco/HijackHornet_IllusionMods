@@ -19,6 +19,9 @@ namespace UIScalerAndWidescreenSupport
 #elif HS2
     [BepInProcess("HoneySelect2")]
     [BepInProcess("StudioNEOV2")]
+#elif KKS
+    [BepInProcess("KoikatsuSunshine")]
+    [BepInProcess("CharaStudio")]
 #elif KK
     [BepInProcess("Koikatu")]
     [BepInProcess("CharaStudio")]

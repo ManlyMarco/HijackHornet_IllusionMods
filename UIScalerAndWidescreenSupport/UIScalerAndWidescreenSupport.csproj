@@ -2,7 +2,7 @@
 	<PropertyGroup>
 		<TargetFramework>net35</TargetFramework>
 		<OutputType>Library</OutputType>
-		<Configurations>AI;HS2;KK</Configurations>
+		<Configurations>AI;HS2;KKS;KK</Configurations>
 		<DebugType>none</DebugType>
 		<Optimize>true</Optimize>
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
@@ -30,6 +30,19 @@
 	</PropertyGroup>
 	<ItemGroup Condition=" '$(Configuration)' == 'HS2' ">
 		<PackageReference Include="IllusionLibs.HoneySelect2.AllPackages" Version="*">
+			<IncludeAssets>compile</IncludeAssets>
+			<PrivateAssets>all</PrivateAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<PropertyGroup Condition=" '$(Configuration)' == 'KKS' ">
+		<TargetFramework>net46</TargetFramework>
+		<OutputPath>../bin/KKS/</OutputPath>
+		<AssemblyName>KKS_$(AssemblyName)</AssemblyName>
+		<DefineConstants>TRACE;KKS</DefineConstants>
+	</PropertyGroup>
+	<ItemGroup Condition=" '$(Configuration)' == 'KKS' ">
+		<PackageReference Include="IllusionLibs.KoikatsuSunshine.AllPackages" Version="*">
 			<IncludeAssets>compile</IncludeAssets>
 			<PrivateAssets>all</PrivateAssets>
 		</PackageReference>
